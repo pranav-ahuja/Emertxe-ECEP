@@ -1,0 +1,8 @@
+single_ll.out: main.o
+	gcc main.o -o main.out
+
+main.o: single_ll.c
+	gcc -c single_ll.c
+
+clean:
+	rm *.o *.out
